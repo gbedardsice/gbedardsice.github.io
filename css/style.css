@@ -70,29 +70,31 @@ p {
   font-size: 30px;
   margin-top: 15px;
 }
-code {
-  margin: 20px 1%;
-  float: left;
-  width: 48%;
-  height: 105px;
-  background: rgba(0,0,0,0.1);
-  border: rgba(0,0,0,0.05) 5px solid;
-  border-radius: 5px;
-  padding:5px;
-  color: white;
-  text-align: center;
-  font-size: 15px;
-  margin-top: 25px;
+
+a[class^='sprite'] {
   display: block;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  width: 61px;
+  height: 60px;
 }
-code.html {
-  color: #7EC9E6;
+
+.sprite-github {
+  background: url('images/free-flat-social-icons.png') no-repeat -237px 0;
 }
-code.js {
-  color: #FFAD00;
+
+.sprite-twitter {
+  background: url('images/free-flat-social-icons.png') no-repeat 0 0;
+}
+
+.sprite-linkedin {
+  background: url('images/free-flat-social-icons.png') no-repeat -316px -79px;
+}
+
+.sprite-soundcloud {
+  background: url('images/free-flat-social-icons.png') no-repeat -553px -160px;
+}
+
+.sprite-email {
+  background: url('images/free-flat-social-icons.png') no-repeat -158px -239px;
 }
 
 .main {
@@ -114,98 +116,6 @@ code.js {
 
 .main h1.demo1 {
   background: #1ABC9C;
-}
-
-.reload.bell {
-  font-size: 12px;
-  padding: 20px;
-  width: 45px;
-  text-align: center;
-  height: 47px;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-}
-
-.reload.bell #notification {
-  font-size: 25px;
-  line-height: 140%;
-}
-
-.reload, .btn{
-  display: inline-block;
-  border: 4px solid #A2261E;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  background: #CC3126;
-  display: inline-block;
-  line-height: 100%;
-  padding: 0.7em;
-  text-decoration: none;
-  color: #fff;
-  width: 100px;
-  line-height: 140%;
-  font-size: 17px;
-  font-family: open sans;
-  font-weight: bold;
-}
-.reload:hover{
-  background: #444;
-}
-.btn {
-  width: 200px;
-  color: rgb(255, 255, 255);
-  border: 4px solid rgb(0, 0, 0);
-  background: rgba(3, 3, 3, 0.75);
-}
-.clear {
-  width: auto;
-}
-.btn:hover, .btn:hover {
-  background: #444;
-}
-.btns {
-  width: 410px;
-  margin: 50px auto;
-}
-.credit {
-  text-align: center;
-  color: rgba(0,0,0,0.5);
-  padding: 10px;
-  width: 410px;
-  clear: both;
-}
-.credit a {
-  color: rgba(0,0,0,0.85);
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-}
-
-.back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
-  display: block;
-  padding: 7px;
-  width: 100%;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.25);
-  font-weight: bold;
-  font-size: 13px;
-  color: #000;
-  -webkit-transition: all 500ms ease-in-out;
-  -moz-transition: all 500ms ease-in-out;
-  -o-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
-}
-.back:hover {
-  color: black;
-  background: rgba(255, 255, 255, 0.5);
 }
 
 header {
@@ -232,7 +142,14 @@ header {
 }
 
 .main section.page1 {
-  background:url(images/top-bg.jpg) #0b333f no-repeat center center fixed
+  background: url(images/top-bg.jpg) #0b333f no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .main section.page1 h1 {
@@ -256,6 +173,17 @@ header {
   color: #f0bf00;
 }
 
+.main section.page1 ul {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.main section.page1 ul li {
+  display: inline-block;
+}
+
 .main section .page_container .btns {
   clear: both;
   float: left;
@@ -273,8 +201,4 @@ header {
 
 .main section.page2 a {
   color: #f0bf00;
-}
-
-ul.icons li {
-  display: inline-block;
 }

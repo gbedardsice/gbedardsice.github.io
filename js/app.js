@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  $('.main').onepage_scroll({
-    sectionContainer: 'section'
-  });
+  // Hide address bar
+  window.scrollTo(0, 1);
+  // $('.main').onepage_scroll({
+  //   sectionContainer: 'section'
+  // });
 });
