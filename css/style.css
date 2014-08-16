@@ -24,7 +24,6 @@ a {
   text-decoration: none;
 }
 
-
 h1, h2 {
   width: 100%;
   float: left;
@@ -123,7 +122,7 @@ header {
   z-index: 10;
 }
 
-.main section .page_container {
+.page_container {
   position: relative;
   top: 25%;
   margin: 0 auto 0;
@@ -141,8 +140,13 @@ header {
   z-index: 1;
 }
 
-.main section.page1 {
-  background: url(images/top-bg.jpg) #0b333f no-repeat center center fixed;
+.background {
+  background: url(images/black-and-white-forest-lake-2312.jpg) #0b333f no-repeat center center fixed;
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -152,35 +156,41 @@ header {
   position: absolute;
 }
 
-.main section.page1 h1 {
+.page-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.page1 h1 {
   margin-bottom: 15px;
 }
 
-.main section.page1 h2 {
+.page1 h2 {
   text-align: center;
   line-height: 160%;
 }
 
-.main section.page1 h1, h2, p {
+.page1 h1, h2, p {
   color: white;
 }
 
-.main section.page1 p {
+.page1 p {
   text-shadow: 1px 1px 1px #333333;
 }
 
-.main section.page1 a {
+.page1 a {
   color: #f0bf00;
 }
 
-.main section.page1 ul {
+.page1 ul {
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 0;
 }
 
-.main section.page1 ul li {
+.page1 ul li {
   display: inline-block;
 }
 
