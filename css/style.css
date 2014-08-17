@@ -142,11 +142,11 @@ header {
 
 .background {
   background: url(images/black-and-white-forest-lake-2312.jpg) #0b333f no-repeat center center fixed;
-  -webkit-filter: blur(6px);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  -ms-filter: blur(3px);
-  filter: blur(3px);
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
