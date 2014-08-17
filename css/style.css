@@ -146,7 +146,7 @@ header {
   -moz-filter: blur(2px);
   -o-filter: blur(2px);
   -ms-filter: blur(2px);
-  filter: blur(2px);
+  filter: url(images/blur.svg#blur);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
