@@ -49,26 +49,37 @@ a[class^='sprite'] {
   display: block;
   width: 61px;
   height: 60px;
+  background: url('../images/free-flat-social-icons.png');
+  background-repeat: no-repeat;
 }
 
-.sprite-github {
-  background: url('images/free-flat-social-icons.png') no-repeat -237px 0;
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    a[class^='sprite'] {
+      background: url('../images/free-flat-social-icons@2.png');
+      background-size: 693px 516px;
+    }
 }
 
-.sprite-twitter {
-  background: url('images/free-flat-social-icons.png') no-repeat 0 0;
+a.sprite-github {
+  background-position: -237px 0;
 }
 
-.sprite-linkedin {
-  background: url('images/free-flat-social-icons.png') no-repeat -316px -79px;
+a.sprite-twitter {
+  background-position: 0 0;
 }
 
-.sprite-soundcloud {
-  background: url('images/free-flat-social-icons.png') no-repeat -553px -160px;
+a.sprite-linkedin {
+  background-position: -316px -79px;
 }
 
-.sprite-email {
-  background: url('images/free-flat-social-icons.png') no-repeat -158px -239px;
+a.sprite-soundcloud {
+  background-position: -553px -160px;
+}
+
+a.sprite-email {
+  background-position: -158px -239px;
 }
 
 #content {
