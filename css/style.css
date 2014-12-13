@@ -97,15 +97,7 @@ a.sprite-email {
 }
 
 .background {
-  background: url(images/black-and-white-forest-lake-2312.jpg) #0b333f no-repeat center center fixed;
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: url(images/blur.svg#blur);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/background.jpg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -117,7 +109,6 @@ a.sprite-email {
   height: 100%;
   position: absolute;
 }
-
 
 ul.icon-list {
   position: absolute;
