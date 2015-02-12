@@ -111,6 +111,7 @@ a.sprite-email {
 .brick-background {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/brick-bg.jpg);
   background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A6000000', endColorstr='#A6000000'), progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/brick-bg.jpg", sizingMethod='scale');
 }
 
 .page-content {
