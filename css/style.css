@@ -3,18 +3,14 @@ html {
 }
 
 body {
-  background: #E2E4E7;
+  background: rgb(30, 34, 39);
+  color: #fff;
   padding: 0;
-  text-align: center;
-  font-family: 'open sans';
-  position: relative;
   margin: 0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
   height: 100%;
-  -webkit-font-smoothing: antialiased;
-}
-
-body.arpentor {
-  font-family: Roboto Condensed;
+  line-height: 1.15;
 }
 
 a {
@@ -22,31 +18,19 @@ a {
   color: #f0bf00;
 }
 
-h1, h2, p {
-  width: 100%;
-  float: left;
-  color: white;
+h1,
+h2 {
+  font-weight: 400;
 }
 
 h1 {
-  margin-bottom: 5px;
-  margin-top: 0;
-  font-size: 70px;
-  letter-spacing: -4px;
-  font-weight: 100;
+  margin-bottom: 1rem;
+  font-size: 4.5rem;
 }
 
 h2 {
-  font-weight: 100;
   margin-top: 0;
-  margin-bottom: 10px;
-  text-align: center;
-  line-height: 160%;
-}
-
-p {
-  font-weight: 100;
-  text-shadow: 1px 1px 1px #333333;
+  margin-bottom: 1rem;
 }
 
 a[class^='sprite'] {
@@ -57,13 +41,11 @@ a[class^='sprite'] {
   background-repeat: no-repeat;
 }
 
-@media
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-    a[class^='sprite'] {
-      background: url('../images/free-flat-social-icons@2.png');
-      background-size: 693px 516px;
-    }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  a[class^='sprite'] {
+    background: url('../images/free-flat-social-icons@2.png');
+    background-size: 693px 516px;
+  }
 }
 
 a.sprite-github {
@@ -86,44 +68,15 @@ a.sprite-email {
   background-position: -158px -239px;
 }
 
-#content {
-  height: 100% !important;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
 .info {
-  position: relative;
-  top: 25%;
-  margin: 0 auto 0;
-  max-width: 950px;
-  z-index: 3;
-}
-
-.background {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/background.jpg);
-  background-size: cover;
   width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.brick-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/brick-bg.jpg);
-  background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A6000000', endColorstr='#A6000000'), progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/brick-bg.jpg", sizingMethod='scale');
-}
-
-.page-content {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  max-width: 60rem;
+  text-align: center;
+  margin: 3rem auto;
 }
 
 ul.icon-list {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  text-align: center;
   padding: 0;
 }
 
